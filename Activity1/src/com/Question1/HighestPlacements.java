@@ -50,6 +50,7 @@ public class HighestPlacements {
         else
         {
             System.out.println("Input is invalid");
+            sc.close();
         }
     }
 

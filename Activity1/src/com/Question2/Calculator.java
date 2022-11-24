@@ -49,7 +49,7 @@ public class Calculator {
 		      default:
 		        System.out.println("Invalid operator!");
 		        break;
-		    }
+		    }input.close();
 
 		   
 		  }
