@@ -18,7 +18,7 @@ public class ArithmeticExceptionclass {
 			
 			if(a==0 && b==0)
 			{
-				 throw new Exception("invalid numbers!!!!!");	//throwing exception because the 0 number entered
+				 throw new Exception("invalid numbers!!!!!");
 			}
 			else
 			{
