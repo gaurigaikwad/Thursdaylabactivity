@@ -2,11 +2,13 @@ package com.Question3;
 import java.util.Scanner;
 import javax.naming.InvalidNameException;
 
-public class UserDefinedExceptionToCheckName {
+public class UserDefinedExceptionToCheckName extends Throwable {
 	
 	void validateName(String name) throws InvalidNameException { 
+		
 		String[] names = { "Prathmesh", "Gauri", "Rudra", "Pranjal","Sachi","Anita"};
         boolean found= false;
+        
         for (String n: names)
         {
             if (n.equalsIgnoreCase(name))
@@ -27,10 +29,13 @@ public class UserDefinedExceptionToCheckName {
 	public static void main(String[] args) {
 		 
 	        UserDefinedExceptionToCheckName ck=new UserDefinedExceptionToCheckName();
+	        
 	        Scanner sc=new Scanner(System.in);
+	        
 	        //asks for input from the user
 	        System.out.println("Enter Name:");
 	        String name = sc.next();
+	        
 	        try
 	        {
 	            ck.validateName(name);
