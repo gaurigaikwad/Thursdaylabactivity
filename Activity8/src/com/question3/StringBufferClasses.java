@@ -14,6 +14,8 @@ public class StringBufferClasses {
 		
 		//replace() method
 		s.replace(14,19, "hi");
+		
+		//reverse() method
 		System.out.println(s.reverse());
 
 	}
